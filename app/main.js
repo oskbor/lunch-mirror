@@ -11,5 +11,5 @@ injectTapEventPlugin();
 //Needed for React Developer Tools
 window.React = React;
 
-var App = require('./App.js');
+var App = require('./app.js');
 React.render(<App/>, document.body);

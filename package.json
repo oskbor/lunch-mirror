@@ -42,7 +42,7 @@
   "dependencies": {
     "react": "^0.13.0",
     "react-tap-event-plugin": "~0.1.6",
-    "material-ui": "~0.7.3",
-    "baobab": "~1.0.0-rc1"
+    "material-ui": "~0.7.4",
+    "baobab": "~1.0.1"
   }
 }

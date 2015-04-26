@@ -3,12 +3,19 @@ var React = require('react');
 var mui  = require('material-ui');
 var LeftNav = mui.LeftNav;
 var MenuItem = mui.MenuItem;
+var AppBar = mui.AppBar;
 var App = React.createClass({
+
   getInitialState: function () {
     return {
       message: 'Hello World!'
     };
   },
+  toggleMenu: function () {
+  	console.log('clicked hamburger');
+  	this.refs.menu.toggle();
+  },
+
 	render: function() {
 		var menuItems = [
   { route: 'get-started', text: 'Get Started' },
@@ -32,8 +39,11 @@ var App = React.createClass({
   },
 ];
 		return (
-//Hideable Left Nav
-<LeftNav docked={true} menuItems={menuItems} />
+	//Hideable Left Nav
+	<div>
+		<AppBar onMenuIconButtonTouchTap = {this.toggleMenu}  title = "Hej" />
+		<LeftNav ref = "menu" docked = {false}  menuItems = {menuItems} />
+	</div>
 		);
 	}
 	

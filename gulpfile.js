@@ -23,7 +23,6 @@ var jasminePhantomJs = require('gulp-jasmine2-phantomjs');
 var dependencies = [
 	'react',
   'react-addons',
-  'flux',
   'material-ui',
   'baobab'
 ];
